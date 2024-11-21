@@ -1,8 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from "firebase/firestore"; // Importa Firestore
-import { getAuth } from "firebase/auth"; // Importa Authentication
+import { getFirestore } from "firebase/firestore"; 
+import { getAuth } from "firebase/auth"; 
 
 const firebaseConfig = {
   apiKey: "AIzaSyAJb-b9QXIaXJHLN501TC4T3saFgHfP-UA",
@@ -15,14 +15,11 @@ const firebaseConfig = {
   databaseURL: "https://crudzki-85362-default-rtdb.firebaseio.com"
 };
 
-// Inicializa Firebase
 const app = initializeApp(firebaseConfig);
 
-// Inicializa la base de datos Realtime Database, Firestore, y Authentication
 const database = getDatabase(app);
 const analytics = getAnalytics(app);
-const db = getFirestore(app); // Firestore
-const auth = getAuth(app); // Authentication
+const db = getFirestore(app);
+const auth = getAuth(app); 
 
-// Exporta las instancias para usarlas en tu aplicación
 export { app, database, db, auth };

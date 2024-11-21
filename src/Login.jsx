@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/home"); // Redirige a la página principal si el login es exitoso
+      navigate("/home");
     } catch (err) {
       setError("Usuario o contraseña incorrectos");
     }
@@ -66,8 +66,8 @@ const Login = () => {
                       )}
                       
                       <div className="text-center">
-                        <a className="small" href="#register">
-                          Create una cuenta
+                        <a className="small" href="/register">
+                          Crear una cuenta
                         </a>
                       </div>
                     </div>
