@@ -72,9 +72,14 @@ Los datos se almacenan en Firestore.
 Login
 Verifica las credenciales ingresadas contra Firebase Authentication.
 Redirige al Home en caso de éxito.
+Tambien incluye un enlace para registrar usuarios.
 
 Home
-Lista 4 productos con sus detalles básicos.
+Al entrar al sitio, se mostrará un mensaje de bienvenida y una breve descripción de la tienda.
+
+Productos
+Lista 4 productos con su infomracion.
+Haz clic en el nombre del producto para obtener el detalle de un producto.
 Los productos se obtienen desde Firestore.
 
 Detalle de Producto
