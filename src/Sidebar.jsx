@@ -3,7 +3,6 @@ import React from "react";
 const Sidebar = () => {
   return (
     <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-      {/* Sidebar - Brand */}
       <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
         <div className="sidebar-brand-icon rotate-n-15">
           <i className="fas fa-laugh-wink"></i>
@@ -23,7 +22,7 @@ const Sidebar = () => {
       <hr className="sidebar-divider" />
 
       <li className="nav-item">
-        <a className="nav-link" href="/home">
+        <a className="nav-link" href="/productos">
           <i className="fas fa-fw fa-cog"></i>
           <span>Productos</span>
         </a>
